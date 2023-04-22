@@ -3,6 +3,7 @@
 <head>
 	<title>Score Multiplier</title>
 	<?php include 'php/functions.php'; ?>
+	<script src="js/main.js" defer></script>
 </head>
 <body>
 	<h1>Howest Grading Tool</h1>
@@ -80,7 +81,6 @@
 		<input type="button" name="clear" value="Clear" onclick="clearForm()">
 
 	</form>
-	
-	<script src="js/main.js"></script>
+	<?php echo $result; ?>
 </body>
 </html>
