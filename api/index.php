@@ -80,7 +80,9 @@
 
 	</form>
 	
-	<?php
+	<?php declare(strict_types = 1);
+
+	    phpinfo();
 
 		if (isset($_POST['submit'])) {
         
