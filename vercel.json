@@ -5,8 +5,7 @@
       }
     },
     "routes": [
-      { "src": "/css/(.*)", "dest": "/css/stylesheet.css" },
-      { "src": "/js/(.*)", "dest": "/js/main.js" },
+      { "handle": "filesystem" },
       { "src": "/(.*)", "dest": "/api/index.php" }
     ]
   }
