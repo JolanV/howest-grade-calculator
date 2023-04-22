@@ -109,7 +109,7 @@
 			$ip => $_POST['IP'],
 			$we2 => $_POST['WE2'],
 
-		]
+		];
 		$study_weight = [
 			$bit => 3,
 			$cib => 3,
@@ -130,7 +130,7 @@
 			$we1 => 6,
 			$ip => 9,
 			$we2 => 21
-		]
+		];
 		
 		
 		/* functions */
