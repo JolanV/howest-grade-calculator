@@ -112,7 +112,15 @@
 		
         /* Multiply the grades with the studiepunten */
 
-			$new_BIT_score = $bit * 3;
+		/* functions */
+
+		public int multiply($grade, $studiepunten) {
+			return $grade * $studiepunten;
+		}
+
+		/* functions end */
+
+			$new_BIT_score = multiply($bit, 3);
 			$new_CIB_score = $cib * 3;
 			$new_DB_score = $db * 6;
 			$new_PRA_score = $pra * 5;	
