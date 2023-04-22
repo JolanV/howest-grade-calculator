@@ -1,5 +1,5 @@
 <?php
-		if (isset($_POST['submit'])) {
+	if (isset($_POST['submit'])) {
         /*Gets the grade values from the form*/
 		$grades = [
 			'bit' => $_POST['BIT'],
@@ -56,5 +56,5 @@
 		$scores = array_map('multiply', $grades, $study_weight);
 		$final_grade = array_sum($scores) / 120;
         $result = "<p id='echo'>Your grade will be: $final_grade</p>";
-		}
-	?>
+	}
+?>
