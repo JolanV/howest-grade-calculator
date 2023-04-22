@@ -132,12 +132,12 @@
 			$we2 => 21
 		]
 		
-        /* Multiply the grades with the studiepunten */
-
+		
 		/* functions */
+        /* Multiply the grades with the study_weight */
 
 		public int multiply($grade, $study_weight) {
-			return $grade * $studiepunten;
+			return $grade * $study_weight;
 		}
 		/* functions end */
 
