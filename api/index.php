@@ -85,29 +85,33 @@
 		if (isset($_POST['submit'])) {
         
         /*Gets the grade values from the form*/
+		$grades = [
+			$bit => $_POST['BIT'],
+			$cib => $_POST['CIB'],
+			$db => $_POST['DB'],
+			$pra => $_POST['PRA'],
+			$prb => $_POST['PRB'],
+			$wfb => $_POST['WFB'],
+			$we => $_POST['WE'],
+	
+			$cia => $_POST['CIA'],
+			$pre => $_POST['PRE'],
+			$wb => $_POST['WB'],
+			$wfa => $_POST['WFA'],
+			$wsi => $_POST['WSI'],
+	
+			$ait => $_POST['AIT'],
+			$mde => $_POST['MDE'],
+			$pin => $_POST['PIN'],
+			$pri => $_POST['PRI'],
+			$we1 => $_POST['WE1'],
+	
+			$ip => $_POST['IP'],
+			$we2 => $_POST['WE2'],
 
-			$bit = $_POST['BIT'];
-			$cib = $_POST['CIB'];
-			$db = $_POST['DB'];
-			$pra = $_POST['PRA'];
-			$prb = $_POST['PRB'];
-			$wfb = $_POST['WFB'];
-			$we = $_POST['WE'];
+		]
 
-			$cia = $_POST['CIA'];
-			$pre = $_POST['PRE'];
-			$wb = $_POST['WB'];
-			$wfa = $_POST['WFA'];
-			$wsi = $_POST['WSI'];
 
-			$ait = $_POST['AIT'];
-			$mde = $_POST['MDE'];
-			$pin = $_POST['PIN'];
-			$pri = $_POST['PRI'];
-			$we1 = $_POST['WE1'];
-
-			$ip = $_POST['IP'];
-			$we2 = $_POST['WE2'];
 
 		
         /* Multiply the grades with the studiepunten */
