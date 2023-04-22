@@ -142,7 +142,7 @@
 		/* functions end */
 
 		//creates sum of all grades and divides by 120
-		$scores = (array.map('multiply', $grades, $study_weight)/120);
+		$scores = (array.map('multiply', $grades, $study_weight))/120;
 
 			echo "<p>Your grade will be: $scores</p>";
 
