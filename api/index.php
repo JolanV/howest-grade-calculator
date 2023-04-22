@@ -138,7 +138,7 @@
 
 		public int multiply($grade, $study_weight) {
 			return $grade * $study_weight;
-		}
+		};
 		/* functions end */
 
 		//creates sum of all grades and divides by 120
@@ -146,7 +146,7 @@
 
 			echo "<p>Your grade will be: $scores</p>";
 
-		}
+		};
 	?>
 
 	<script>
