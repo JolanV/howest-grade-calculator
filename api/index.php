@@ -149,5 +149,28 @@
 
 		}
 	?>
+	<script>
+        function clearForm() {
+            document.getElementById("BIT").value = "";
+            document.getElementById("CIB").value = "";
+            document.getElementById("DB").value = "";
+            document.getElementById("PRA").value = "";
+            document.getElementById("PRB").value = "";
+            document.getElementById("WFB").value = "";
+            document.getElementById("WE").value = "";
+            document.getElementById("CIA").value = "";
+            document.getElementById("PRE").value = "";
+            document.getElementById("WB").value = "";
+            document.getElementById("WFA").value = "";
+            document.getElementById("WSI").value = "";
+            document.getElementById("AIT").value = "";
+            document.getElementById("MDE").value = "";
+            document.getElementById("PIN").value = "";
+            document.getElementById("PRI").value = "";
+            document.getElementById("WE1").value = "";
+            document.getElementById("IP").value = "";
+            document.getElementById("WE2").value = "";
+        }
+    </script>
 </body>
 </html>
