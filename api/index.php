@@ -110,6 +110,15 @@
 			$we2 => $_POST['WE2'],
 
 		]
+		$study_weight = [
+			$one_hour => 1,
+			$two_hours => 2,
+			$three_hours => 3,
+			$four_hours => 4,
+			$five_hours => 5,
+			$six_hours => 6,
+			$nine_hours => 9,
+			$twenty_one => 21,
 
 
 
@@ -118,7 +127,7 @@
 
 		/* functions */
 
-		public int multiply($grade, $studiepunten) {
+		public int multiply($grade, $study_weight) {
 			return $grade * $studiepunten;
 		}
 
