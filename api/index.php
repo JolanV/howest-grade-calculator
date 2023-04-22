@@ -111,25 +111,25 @@
 
 		]
 		$study_weight = [
-			'BIT' => 3,
-			'CIB' => 3,
-			'DB' => 6,
-			'PRA' => 5,
-			'PRB' => 6,
-			'WFB' => 4,
-			'WE' => 3,
-			'CIA' => 3,
-			'PRE' => 6,
-			'WB' => 9,
-			'WFA' => 6,
-			'WSI' => 6,
-			'AIT' => 3,
-			'MDE' => 6,
-			'PIN' => 9,
-			'PRI' => 6,
-			'WE1' => 6,
-			'IP' => 9,
-			'WE2' => 21
+			$bit => 3,
+			$cib => 3,
+			$db => 6,
+			$pra  => 5,
+			$prb => 6,
+			$wfb => 4,
+			$we => 3,
+			$cia => 3,
+			$pre => 6,
+			$wb => 9,
+			$wfa => 6,
+			$wsi => 6,
+			$ait => 3,
+			$mde => 6,
+			$pin => 9,
+			$pri => 6,
+			$we1 => 6,
+			$ip => 9,
+			$we2 => 21
 		]
 		
         /* Multiply the grades with the studiepunten */
