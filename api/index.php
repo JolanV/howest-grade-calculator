@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Score Multiplier</title>
-	<?php include 'php/functions.php'; ?>
-	<script src="js/main.js" defer></script>
+	<meta charset="UTF-8">
+    <title>Score Multiplier</title>
+    <?php include 'php/functions.php'; ?>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
 	<h1>Howest Grading Tool</h1>
