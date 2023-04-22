@@ -82,8 +82,6 @@
 	
 	<?php
 
-	    phpinfo();
-
 		if (isset($_POST['submit'])) {
         
         /*Gets the grade values from the form*/
