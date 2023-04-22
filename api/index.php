@@ -111,17 +111,26 @@
 
 		]
 		$study_weight = [
-			$one_hour => 1,
-			$two_hours => 2,
-			$three_hours => 3,
-			$four_hours => 4,
-			$five_hours => 5,
-			$six_hours => 6,
-			$nine_hours => 9,
-			$twenty_one => 21,
-
-
-
+			'BIT' => 3,
+			'CIB' => 3,
+			'DB' => 6,
+			'PRA' => 5,
+			'PRB' => 6,
+			'WFB' => 4,
+			'WE' => 3,
+			'CIA' => 3,
+			'PRE' => 6,
+			'WB' => 9,
+			'WFA' => 6,
+			'WSI' => 6,
+			'AIT' => 3,
+			'MDE' => 6,
+			'PIN' => 9,
+			'PRI' => 6,
+			'WE1' => 6,
+			'IP' => 9,
+			'WE2' => 21
+		]
 		
         /* Multiply the grades with the studiepunten */
 
@@ -130,43 +139,12 @@
 		public int multiply($grade, $study_weight) {
 			return $grade * $studiepunten;
 		}
-
 		/* functions end */
 
-			$new_BIT_score = multiply($bit, 3);
-			$new_CIB_score = $cib * 3;
-			$new_DB_score = $db * 6;
-			$new_PRA_score = $pra * 5;	
-			$new_PRB_score = $prb * 6;					
-			$new_WFB_score = $wfb * 4;
-			$new_WE_score = $we * 3;
+		//creates sum of all grades and divides by 120
+		$scores = (array.map('multiply', $grades, $study_weight)/120);
 
-			$new_CIA_score = $cia * 3;
-			$new_PRE_score = $pre * 6;
-			$new_WB_score = $wb * 9;	
-			$new_WFA_score = $wfa * 6;
-			$new_WSI_score = $wsi * 6;
-
-			$new_AIT_score = $ait * 3;
-			$new_MDE_score = $mde * 6;
-			$new_PIN_score = $pin * 9;		
-			$new_PRI_score = $pri * 6;
-			$new_WE1_score = $we1 * 6;
-
-			$new_IP_score = $ip * 9;
-			$new_WE2_score = $we2 * 21;
-
-		/*Creates a sum of the score and divide that by the total amount of studiepunten (120 in this case) */	
-			
-		    $sum_semester1 = $new_PRB_score + $new_PRA_score + $new_BIT_score + $new_WFB_score + $new_WE_score + $new_CIB_score + $new_DB_score;
-			$sum_semester2 = $new_CIA_score + $new_PRE_score + $new_WB_score + $new_WFA_score + $new_WSI_score;
-			$sum_semester3 = $new_AIT_score + $new_MDE_score + $new_PIN_score + $new_PRI_score + $new_WE1_score;
-			$sum_semester4 = $new_IP_score + $new_WE2_score;
-
-			$sum_semesters = $sum_semester1 + $sum_semester2 + $sum_semester3 + $sum_semester4;
-			$final_grade = $sum_semesters / 120;
-
-			echo "<p>Your grade will be: $final_grade</p>";
+			echo "<p>Your grade will be: $scores</p>";
 
 		}
 	?>
