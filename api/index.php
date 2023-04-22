@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
     <title>Score Multiplier</title>
     <?php include 'php/functions.php'; ?>
-    <link rel="stylesheet" href="css/stylesheet.css">
-    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="/api/css/stylesheet.css">
+    <script src="/api/js/main.js" defer></script>
 </head>
 <body>
 	<h1>Howest Grading Tool</h1>
