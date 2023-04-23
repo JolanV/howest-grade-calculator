@@ -9,7 +9,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
 </head>
 <body>
-	<h1>Howest Grading Tool</h1>
+	<h1>Howest Grade Calculator</h1>
 	<p>Enter your scores in the form below to calculate your final grade!</p>
 	<form method="POST">
         <section>
@@ -19,7 +19,7 @@
 		<label for="BIT">Basic IT skills:</label>
 		<input class="input" type="number" name="BIT" id="BIT"  value="<?php echo isset($_POST['BIT']) ? $_POST['BIT'] : ''; ?>" min="0" max="20" required>
 		<br>
-		<label for="CIB">Continues integration basics:</label>
+		<label for="CIB">CI basics:</label>
 		<input class="input" type="number" name="CIB" id="CIB" value="<?php echo isset($_POST['CIB']) ? $_POST['CIB'] : ''; ?>" min="0" max="20" required>
 		<br>
 		<label for="DB">Databases:</label>
@@ -42,7 +42,7 @@
 	 <!-- Semester 2 -->
 
     <div class="sem">
-	 	<label for="CIA">Continuous integration advanced:</label>
+	 	<label for="CIA">CI advanced:</label>
         <input class="input" type="number" name="CIA" id="CIA" value="<?php echo isset($_POST['CIA']) ? $_POST['CIA'] : ''; ?>" min="0" max="20" required>
         <br>
         <label for="PRE">Programming Expert:</label>
@@ -52,7 +52,7 @@
         <input class="input" type="number" name="WB" id="WB" value="<?php echo isset($_POST['WB']) ? $_POST['WB'] : ''; ?>" min="0" max="20" required>
         <br>
         <label for="WFA">Web Frontend Advanced:</label>
-        <input class="input" type="number" min = 0, max = 20 name="WFA" id="WFA" value="<?php echo isset($_POST['WFA']) ? $_POST['WFA'] : ''; ?>" min="0" max="20" required>
+        <input class="input" type="number" name="WFA" id="WFA" value="<?php echo isset($_POST['WFA']) ? $_POST['WFA'] : ''; ?>" min="0" max="20" required>
         <br>
         <label for="WSI">Worklplace Simulation:</label>
         <input class="input" type="number" name="WSI" id="WSI" value="<?php echo isset($_POST['WSI']) ? $_POST['WSI'] : ''; ?>" min="0" max="20" required>
@@ -93,7 +93,6 @@
 		<input type="button" name="clear" value="Clear" onclick="clearForm()">
 	</form>
 	<?php
-    $result = "";
     echo $result; ?>
 </body>
 </html>
