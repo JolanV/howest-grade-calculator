@@ -1,3 +1,35 @@
 body{
     background-color: #44c8f5;
 }
+
+section {
+    display: flex;
+}
+
+.sem4{
+    margin: 5px;
+    width: 250px;
+    height: 600px;
+    background-color: white;
+}
+
+.sem3{
+    margin: 5px;
+    width: 250px;
+    height: 600px;
+    background-color: white;
+}
+
+.sem2{
+    margin: 5px;
+    width: 250px;
+    height: 600px;
+    background-color: white;
+}
+
+.sem1{
+    margin: 5px;
+    width: 250px;
+    height: 600px;
+    background-color: white;
+}
