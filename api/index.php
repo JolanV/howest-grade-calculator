@@ -6,6 +6,7 @@
     <?php include 'php/functions.php'; ?>
     <link rel="stylesheet" href="./css/stylesheet.css">
     <script src="./js/main.js" defer></script>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
 </head>
 <body>
 	<h1>Howest Grading Tool</h1>
@@ -14,7 +15,7 @@
         <section>
 
 	<!-- Semester 1 -->
-    <div class="sem1">
+    <div class="sem">
 		<label for="BIT">Basic IT skills:</label>
 		<input class="input" type="number" name="BIT" id="BIT"  value="<?php echo isset($_POST['BIT']) ? $_POST['BIT'] : ''; ?>" min="0" max="20" required>
 		<br>
@@ -40,7 +41,7 @@
 
 	 <!-- Semester 2 -->
 
-    <div class="sem2">
+    <div class="sem">
 	 	<label for="CIA">Continuous integration advanced:</label>
         <input class="input" type="number" name="CIA" id="CIA" value="<?php echo isset($_POST['CIA']) ? $_POST['CIA'] : ''; ?>" min="0" max="20" required>
         <br>
@@ -60,7 +61,7 @@
 
 	<!-- Semester 3 -->
 
-    <div class="sem3">
+    <div class="sem">
 		<label for="AIT">Advanced IT skills:</label>
         <input class="input" type="number" name="AIT" id="AIT" value="<?php echo isset($_POST['AIT']) ? $_POST['AIT'] : ''; ?>" min="0" max="20" required>
         <br>
@@ -79,7 +80,7 @@
     </div>
 
     <!-- Semester 4 -->
-    <div class="sem4">
+    <div class="sem">
         <label for="IP">Innovative Project:</label>
         <input class="input" type="number" name="IP" id="IP" value="<?php echo isset($_POST['IP']) ? $_POST['IP'] : ''; ?>" min="0" max="20" required>
         <br>
