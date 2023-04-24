@@ -4,11 +4,7 @@
       "runtime": "vercel-php@0.6.0"
     }
   },
-  {
-    "routes": [
-      { "src": "/api/(.)", "dest": "/api/index.php" },
-      { "src": "/css/(.)", "headers": { "content-type": "text/css", "cache-control": "public, max-age=86400" }, "dest": "/css/$1" },
-      { "src": "/js/(.*)", "headers": { "content-type": "text/javascript", "cache-control": "public, max-age=86400" }, "dest": "/js/$1" }
-    ]
-  }
+  "routes": [
+    { "src": "/(.*)",  "dest": "/api/index.php" }
+  ]
 }
