@@ -6,16 +6,20 @@
     <?php include 'php/functions.php'; ?>
     <link rel="stylesheet" href="./css/stylesheet.css">
     <script src="./js/main.js" defer></script>
-    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-	<h1>Howest Grade Calculator</h1>
+	<img src="https://ima.cdn.dreamapply.com/eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJkcmVhbS1hcHBseSIsImF1ZCI6ImRyZWFtLWltYWdlIiwicGxkIjp7InBhdGgiOiJkcmVhbS1hcHBseTpzaGFyZDEyNjYvaW5zdGFuY2VfbG9nb3MvMS5xZnByZGIiLCJ0cmFuc2Zvcm1hdGlvbnMiOlt7Im5hbWUiOiJmaXQiLCJwYXJhbXMiOnsid2lkdGgiOiI0MjAiLCJoZWlnaHQiOiIyMDAiLCJxdWFsaXR5IjoiOTUiLCJleHRlbmQiOiIyNTUsMjU1LDI1NSJ9fV0sImNhY2hlIjoibWF4LWFnZT0zMTUzNjAwMCwgcHVibGljIiwib3V0cHV0X2Zvcm1hdCI6InNhbWUiLCJzZGtfdmVyc2lvbiI6IjEuMCJ9fQ.QObW-SdmphPw1VESco5mY0bxq5G1f0U9e3PeDByb-I6rXujQVBAzAQwJUCjHyyv0Z3TCIMZWwltjYQB6j5OPYma_hVlB1XsbhDvtNcPBb5tulmUISIFKUXGH2prWFKC4d3i4MggMejSOdJG1Zd-FW7Dz6S4KxU7UtuB_DoA-_WuoGX0k_Zz4WTdmGn6o4EFirtUpLfJjHMwB_BMvf03IwS64_wjrxaNzCG_R3HpFiZDhPpVDAINRYOy1_JntlPGhT0R404tImscsX_Az5L9vOIjxNpAznpCFOSzsXkrxxmMVX9QwCo8HhtLgsvVVp-nweo9XJ5bXuAx2x2J6aJhLCQ" alt="">
 	<p>Enter your scores in the form below to calculate your final grade!</p>
 	<form method="POST">
         <section>
 
 	<!-- Semester 1 -->
+    <h1>Semester 1</h1>
     <div class="sem">
+        
 		<label for="BIT">Basic IT skills:</label>
 		<input class="input" type="number" name="BIT" id="BIT"  value="<?php echo isset($_POST['BIT']) ? $_POST['BIT'] : ''; ?>" min="0" max="20" required>
 		<br>
@@ -34,14 +38,15 @@
 		<label for="WFB">Web Frontend Basics:</label>
 		<input class="input" type="number" name="WFB" id="WFB" value="<?php echo isset($_POST['WFB']) ? $_POST['WFB'] : ''; ?>" min="0" max="20" required>
 		<br>
-		<label for="WE">Worklplace Exploring</label>
+		<label for="WE">Workplace Exploring:</label>
 		<input class="input" type="number" name="WE" id="WE" value="<?php echo isset($_POST['WE']) ? $_POST['WE'] : ''; ?>" min="0" max="20" required>
 		<br>
     </div>
 
 	 <!-- Semester 2 -->
-
+     <h1>Semester 2</h1>
     <div class="sem">
+    
 	 	<label for="CIA">CI advanced:</label>
         <input class="input" type="number" name="CIA" id="CIA" value="<?php echo isset($_POST['CIA']) ? $_POST['CIA'] : ''; ?>" min="0" max="20" required>
         <br>
@@ -60,8 +65,9 @@
         </div>
 
 	<!-- Semester 3 -->
-
+    <h1>Semester 3</h1>
     <div class="sem">
+    
 		<label for="AIT">Advanced IT skills:</label>
         <input class="input" type="number" name="AIT" id="AIT" value="<?php echo isset($_POST['AIT']) ? $_POST['AIT'] : ''; ?>" min="0" max="20" required>
         <br>
@@ -80,7 +86,9 @@
     </div>
 
     <!-- Semester 4 -->
+    <h1>Semester 4</h1>
     <div class="sem">
+    
         <label for="IP">Innovative Project:</label>
         <input class="input" type="number" name="IP" id="IP" value="<?php echo isset($_POST['IP']) ? $_POST['IP'] : ''; ?>" min="0" max="20" required>
         <br>
@@ -89,8 +97,8 @@
         <br>				
     </div>
     </section>
-    <input type="submit" name="submit" value="Calculate">
-		<input type="button" name="clear" value="Clear" onclick="clearForm()">
+    <input class="buttonprim" type="submit" name="submit" value="Calculate">
+		<input class="buttonsec" type="button" name="clear" value="Clear" onclick="clearForm()">
 	</form>
 	<?php
     echo $result; ?>
