@@ -1,3 +1,32 @@
 body{
     background-color: #44c8f5;
 }
+
+*{
+    font-family:monospace;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+section {
+    display: flex;
+    align-items: center;
+}
+.sem{
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+    width: 250px;
+    height: 400px;
+    background-color: white;
+}
+
+input {
+    margin: 5px;
+}
